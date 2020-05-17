@@ -6,10 +6,10 @@
                 "name": "GPIO Pin",
                 "fields": [
                     {
-                        "name": "GPIO",
+                        "name": "gpio",
                         "type": "text",
                         "label": "button",
-                        "value": "26"
+                        "value": "14"
                     }
                 ]
              }
