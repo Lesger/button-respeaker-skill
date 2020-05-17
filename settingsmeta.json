@@ -1,9 +1,9 @@
 {
-    "name": "button-respeaker-skill",
+    "name": "MycroftPushToListen",
     "skillMetadata": {
         "sections": [
             {
-                "name": "gpio",
+                "name": "GPIO Pin",
                 "fields": [
                     {
                         "name": "gpio",
