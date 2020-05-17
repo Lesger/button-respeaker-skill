@@ -8,9 +8,9 @@ __author__ = 'aussieW'
 
 LOGGER = getLogger(__name__)
 
-class MycroftPushToListen(MycroftSkill):
+class button-respeaker-skill(MycroftSkill):
     def __init__(self):
-        super(MycroftPushToListen, self).__init__(name='MycroftPushToListen')
+        super(button-respeaker-skill, self).__init__(name='button-respeaker-skill')
         self.button_pin = self.settings['gpio']
         self.proc = None
         
@@ -33,7 +33,7 @@ class MycroftPushToListen(MycroftSkill):
             self.start()
         
     def _start(self):
-        self.proc = subprocess.Popen(['python', '/opt/mycroft/skills/mycroft-push-to-listen/button.py', self.button_pin])
+        self.proc = subprocess.Popen(['python', '/opt/mycroft/skills/button-respeaker-skill.lesger/button.py', self.button_pin])
         LOGGER.info('button process pid = ' + str(self.proc.pid))
     
     def _stop(self):
@@ -43,7 +43,7 @@ class MycroftPushToListen(MycroftSkill):
     def shutdown(self):
         # shutdown the button.py process
         self._stop()
-        super(MycroftPushToListen, self).shutdown()
+        super(button-respeaker-skill, self).shutdown()
         
 def create_skill():
-    return MycroftPushToListen()
+    return button-respeaker-skill()
