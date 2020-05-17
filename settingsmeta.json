@@ -3,7 +3,7 @@
     "skillMetadata": {
         "sections": [
             {
-                "name": "GPIO Pin",
+                "name": "gpio",
                 "fields": [
                     {
                         "name": "gpio",
