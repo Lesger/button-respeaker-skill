@@ -33,7 +33,7 @@ class button-respeaker-skill(MycroftSkill):
             self.start()
         
     def _start(self):
-        self.proc = subprocess.Popen(['python', '/opt/mycroft/skills/button-respeaker-skill.lesger/button.py', self.button_pin])
+        self.proc = subprocess.Popen(['python', '/opt/mycroft/skills/button-respeaker-skill/button.py', self.button_pin])
         LOGGER.info('button process pid = ' + str(self.proc.pid))
     
     def _stop(self):
