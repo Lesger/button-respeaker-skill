@@ -8,9 +8,9 @@ __author__ = 'aussieW'
 
 LOGGER = getLogger(__name__)
 
-class button-respeaker-skill(MycroftSkill):
+class ButtonRespeaker(MycroftSkill):
     def __init__(self):
-        super(button-respeaker-skill, self).__init__(name='button-respeaker-skill')
+        super(ButtonRespeaker, self).__init__(name='ButtonRespeaker')
         self.button_pin = self.settings['gpio']
         self.proc = None
         
@@ -43,7 +43,7 @@ class button-respeaker-skill(MycroftSkill):
     def shutdown(self):
         # shutdown the button.py process
         self._stop()
-        super(button-respeaker-skill, self).shutdown()
+        super(ButtonRespeaker, self).shutdown()
         
 def create_skill():
-    return button-respeaker-skill()
+    return ButtonRespeaker()
